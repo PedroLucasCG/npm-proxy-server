@@ -14,7 +14,7 @@ const limiter = rateLimit({
     max: 5
 })
 */
-app.use(limiter)
+//app.use(limiter)
 app.set('trust proxy', 1)
 
 //routes
