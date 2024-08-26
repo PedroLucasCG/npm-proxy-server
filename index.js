@@ -21,5 +21,7 @@ app.use('/api', require('./routes'))
 //set static folder
 app.use(express.static('public'))
 
-app.use(cors())
+app.use(cors({
+    origin: "*",
+}))
 app.listen(PORT, () => console.log("Verificando a porta "+PORT.toString()))
